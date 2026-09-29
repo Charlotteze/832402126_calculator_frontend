@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - Front-End and Back-End Separation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <main class="calculator">
+            <div class="display">
+                <div id="expression" class="expression"></div>
+                <div id="result" class="result">&nbsp;</div>
+            </div>
+            <div class="keys">
+                <button type="button" class="key func" data-key="C">C</button>
+                <button type="button" class="key" data-key="(">(</button>
+                <button type="button" class="key" data-key=")">)</button>
+                <button type="button" class="key func" data-key="BACK">&#9003;</button>
+                <button type="button" class="key" data-key="7">7</button>
+                <button type="button" class="key" data-key="8">8</button>
+                <button type="button" class="key" data-key="9">9</button>
+                <button type="button" class="key op" data-key="&#247;">&#247;</button>
+                <button type="button" class="key" data-key="4">4</button>
+                <button type="button" class="key" data-key="5">5</button>
+                <button type="button" class="key" data-key="6">6</button>
+                <button type="button" class="key op" data-key="&#215;">&#215;</button>
+                <button type="button" class="key" data-key="1">1</button>
+                <button type="button" class="key" data-key="2">2</button>
+                <button type="button" class="key" data-key="3">3</button>
+                <button type="button" class="key op" data-key="-">-</button>
+                <button type="button" class="key" data-key="0">0</button>
+                <button type="button" class="key" data-key=".">.</button>
+                <button type="button" class="key op" data-key="+">+</button>
+                <button type="button" class="key equals" data-key="=">=</button>
+            </div>
+            <div id="error" class="error hidden"></div>
+        </main>
+
+        <aside class="history">
+            <div class="history-header">
+                <h2>Calculation History</h2>
+                <button type="button" id="clear-all" class="clear-all">Clear All</button>
+            </div>
+            <ul id="history-list" class="history-list"></ul>
+        </aside>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
