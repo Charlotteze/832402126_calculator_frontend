@@ -5,7 +5,7 @@
  */
 // Deployed backend (cpolar public tunnel).
 // For local development, change back to: http://localhost:8080/api
-const API_BASE = 'https://75cc9f10.r32.cpolar.top/api';
+const API_BASE = 'https://619839ed.r32.cpolar.top/api';
 
 async function calculate(expression) {
     const res = await fetch(`${API_BASE}/calculate`, {
